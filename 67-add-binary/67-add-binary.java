@@ -15,8 +15,9 @@ class Solution {
             carry = (sum > 1)? 1 : 0;
             ans.append(sum % 2);
         }
-        if(carry == 1)
+        if(carry == 1)  //adding last carry if any
             ans.append(carry);
+        
         return ans.reverse().toString();
     }
 }
